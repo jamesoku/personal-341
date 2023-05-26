@@ -2,13 +2,32 @@ POST http://localhost:3000/ing HTTP/1.1
 Content-Type: application/json
 
 {
-  "name": "Pancakes",
+  "name": "jjjj",
   "ingredients": [
-    { "name": "Flour", "quantity": 2, "unit": "cups" },
-    { "name": "Eggs", "quantity": 2, "unit": "pieces" },
-    { "name": "Milk", "quantity": 1, "unit": "cup" }
+    { "name": "tggf", "quantity": 2, "unit": "cups" },
+    { "name": "fgf", "quantity": 2, "unit": "pieces" },
+    { "name": "fgf", "quantity": 1, "unit": "cup" }
   ]
 }
 
 ###
 GET  http://localhost:3000/ing HTTP/1.1
+
+###
+GET  http://localhost:3000/ing/646e7ec53ef27f6a632659ac HTTP/1.1
+
+###
+PUT  http://localhost:3000/ing/646e7ec53ef27f6a632659ac HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "ppppp",
+  "ingredients": [
+    { "name": "tggf", "quantity": 2, "unit": "cups" },
+    { "name": "fgf", "quantity": 2, "unit": "pieces" },
+    { "name": "fgf", "quantity": 1, "unit": "cup" }
+  ]
+}
+
+###
+DELETE   http://localhost:3000/ing/646e7ec53ef27f6a632659ac HTTP/1.1
