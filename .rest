@@ -31,3 +31,46 @@ Content-Type: application/json
 
 ###
 DELETE   http://localhost:3000/ing/646e7ec53ef27f6a632659ac HTTP/1.1
+//
+
+
+
+
+
+
+
+//render
+
+POST https://recipe-app-1g0t.onrender.com/ing HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "jjjj",
+  "ingredients": [
+    { "name": "tggf", "quantity": 2, "unit": "cups" },
+    { "name": "fgf", "quantity": 2, "unit": "pieces" },
+    { "name": "fgf", "quantity": 1, "unit": "cup" }
+  ]
+}
+
+###
+GET  https://recipe-app-1g0t.onrender.com/ing HTTP/1.1
+
+###
+GET https://recipe-app-1g0t.onrender.com/ing/646ed22d3ec7e56e052e95e7 HTTP/1.1
+
+###
+PUT  https://recipe-app-1g0t.onrender.com/646ed22d3ec7e56e052e95e7 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "ppppp",
+  "ingredients": [
+    { "name": "tggf", "quantity": 2, "unit": "cups" },
+    { "name": "fgf", "quantity": 2, "unit": "pieces" },
+    { "name": "fgf", "quantity": 1, "unit": "cup" }
+  ]
+}
+
+###
+DELETE   https://recipe-app-1g0t.onrender.com/646e7ec53ef27f6a632659ac HTTP/1.1
